@@ -1,6 +1,11 @@
 body{
 	scroll-behavior: smooth;
 }
+
+#myMenu li a:hover {
+	background-color: teal;
+	color: white;
+  }
 .side-nav ul{
     display: flex;
     position: relative;
