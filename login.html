@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+body {
+  font-family: Arial;
+  margin: 0;
+}
+.container1 .mySlides img
+{
+    height: 550px;
+}
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 15px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: teal;
+}
+.img-st{
+  width: 100%;
+  height: 400px;
+}
+.image-top img
+{
+	width:100%;
+}
+.image-top img:hover
+{
+	transform:scale(1.1);
+	transition:1s;
+}
+.like-view
+{
+	display:block;
+	opacity:0;
+	position:absolute;
+	margin-left:0;
+	width:70px;
+  margin-bottom:20%;
+  transform: translateY(-100%);
+}
+.like-view .fa
+{
+	cursor:pointer;
+	background-color:teal;
+	color:#fff;
+	height:25px;
+	width:25px;
+	font-size:15px;
+	padding:5px;
+	margin-top:3%;
+	margin-bottom:7%;
+	
+}
+.like-view .btn-secondary
+{
+	background:none!important;
+	border:none!important;
+	box-shadow:none!important;
+}
+.image-top:hover .like-view
+{
+	opacity:1;
+	margin-left:5%;
+	transition:1s;
+}
+
+</style>
+<body>
+<!--------------------start nav section----------- -->
+<!-------------------- End carousel slider section----------- -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
+  <a class="w3-bar-item w3-button w3-border-bottom w3-large" href="index.html"><img src="">Natural Photography</a>
+     <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
+       <a class="w3-bar w3-bar-item w3-button w3-teal" href="#">Plants Name</a>
+         <input type="text" id="mySearch" onkeyup="myStyle()" placeholder="Search.." title="Type in a category">
+           <ul id="myMenu" class="w3-container">
+              <li><a href="Nature.html">Natural</a></li>
+              <li><a href="wellpaper.html">Wellpapers</a></li>
+              <li><a href="Amazing.html">Amazing</a></li>
+              <li><a href="Trees.html">Trees</a></li>
+              <li><a href="River.html">River</a></li>
+              <li><a href="birds.html">Birds</a></li>
+              <li><a href="city.html">City</a></li>
+              <li><a href="Animal.html">Animals</a></li>
+              <li><a href="people.html">Pepoles</a></li>
+              <li><a href="technology.html">Technology</a></li>
+              <li><a href="business.html">Business & Work</a></li>
+              <li><a href="Architecture.html">Architecture</a></li>
+              <li><a href="travel.html">Travel</a></li>
+              <li><a href="texture.html">Textures & Patterns</a></li>
+              <li><a href="Interios.html">Interios</a></li>
+              <li><a href="food.html">Food & Drinks</a></li>
+              <li><a href="athletics.html">Athletics</a></li>
+              <li><a href="spirituality.html">Spirituality</a></li>
+              <li><a href="Health.html">Health & Wellness</a></li>
+              <li><a href="Fashion.html">Fashion</a></li>
+              <li><a href="experimental.html">Experimental</a></li>
+              <li><a href="workhome.html">Work from Home</a></li>
+              <li><a href="arts.html">Arts & Culture</a></li>
+              <li><a href="history.html">History</a></li>
+              <li><a href="love.html">Love Images</a></li>
+              <li><a href="sad.html">Sad Images</a></li>
+              <li><a href="background.html">Background image</a></li>
+              <li><a href="popular.html">Popular images</a></li>
+              <li><a href="fish.html">Fish images</a></li>
+           </ul>
+</nav>
+<!---------close side menu---->
+<!----------start slider section-->
+<div class="w3-main" style="margin-left:250px;">
+        <div class="navber w3-theme w3-animate-zoom w3-bar-item w3-large">
+          <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge menu" onclick="w3_open()"></i>
+            <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+            <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+            <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+            <a href="newuser.html"><i class="fa fa-fw fa-user"></i> Login</a>
+        </div>
+         <div class="caurosul">
+             <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+             </div>
+             
+</div>  
+<!------Photo Grid Tittle-->    
+<div class="w3-main" style="margin-left:250px;">
+  <div class="wrapper">
+    <div class="title-text">
+      <div class="title login">
+        Login Form</div>
+        <div class="title signup">
+        Signup Form</div>
+    </div>
+    <div class="form-container">
+      <div class="slide-controls">
+        <input type="radio" name="slide" id="login" checked>
+        <input type="radio" name="slide" id="signup">
+        <label for="login" class="slide login">Login</label>
+        <label for="signup" class="slide signup">Signup</label>
+        <div class="slider-tab">
+        </div>
+     </div>
+     <div class="form-inner">
+        <form action="#" class="login">
+          <div class="field">
+            <input type="text" placeholder="Email Address" required>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Password" required>
+           </div>
+           <div class="pass-link">
+           <a href="#">Forgot password?</a></div>
+           <div class="field btn">
+           <div class="btn-layer">
+           </div>
+           <input type="submit" value="Login">
+           </div>
+           <div class="signup-link">
+           Not a member? <a href="">Signup now</a></div>
+        </form>
+        <form action="#" class="signup">
+            <div class="field">
+               <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="field">
+               <input type="text" placeholder="Email Address" required>
+            </div>
+            <div class="field">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="field">
+               <input type="password" placeholder="Confirm password" required>
+            </div>
+            <div class="field btn">
+            <div class="btn-layer">
+           </div>
+              <input type="submit" value="Signup">
+           </div>
+         </form>
+       </div>
+     </div>
+    </div>
+</div>  
+  <!-- Pagination -->
+  <div class="w3-main" style="margin-left:250px;">
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+      <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption"></p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-main" style="margin-left:250px;">
+    
+      <section class="footer w3-container w3-theme" style="padding:60px;margin-top: 0px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h1> Useful links</h1><hr/>
+              <p><a href=""> Privacy policy</a></p>
+              <p> <a href="">Trems of Use</a></p>
+              <p><a href="">Help Us</a> </p>
+          </div>
+            <div class="col-md-3">
+            <h1>Page Detailes</h1><hr/>
+           <p><a href=""> About Us</a></p> 
+           <p><a href="contact.html">Contact Us</a></p> 
+            </div>
+          <div class="col-md-3">
+              <h1>Follow Us on</h1><hr/>
+              <p><i class="fa fa-Facebook-official"></i><a href="https://facebook.com">Facebook</a></p>
+              <p><i class="fa fa-Youtube-play"></i><a href="https://youtube.com">Youtube</a></p>
+              <p><i class="fa fa-Linkedin"></i>Linkedin</p>
+              <p><i class="fa fa-Twitter"></i><a href="https://twitter.com">Twitter</a></p>
+            </div>
+          <div class="col-md-3 Footer-image">
+              <h1>Download Apps</h1><hr/>
+              <a href=""><img src="image/G1.png"></a><br>
+              <a href=""><img src="image/G2.png"></a>
+              </div>
+       </div>
+       <hr>
+            <p class="copyright"><i class="fa fa-heart"></i>Made by JA Shadin Ahammed.<i class="fa fa-heart"></i>
+          </p>
+       </hr>
+      </div>
+   </section>
+  </div> 
+  <script src="./js/main.js"></script> 
+  <script src="./js/login.js"></script> 
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>   
+  </body>
+  </html> 
