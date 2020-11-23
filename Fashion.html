@@ -8,93 +8,9 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
-body {font-family: "Roboto", sans-serif}
-.w3-bar-block .w3-bar-item {
-  padding: 16px;
-  font-weight: bold;
-}
-body {
-  font-family: Arial;
-  margin: 0;
-}
-.container1 .mySlides img
-{
-    height: 550px;
-}
-/* Style the search box */
-#mySearch {
-  width: 100%;
-  font-size: 15px;
-  padding: 11px;
-  border: 1px solid #ddd;
-}
-
-/* Style the navigation menu inside the left column */
-#myMenu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#myMenu li a {
-  padding: 12px;
-  text-decoration: none;
-  color: black;
-  display: block
-}
-
-#myMenu li a:hover {
-  background-color: teal;
-}
-.img-st{
-  width: 100%;
-  height: 400px;
-}
-.image-top img
-{
-	width:100%;
-}
-.image-top img:hover
-{
-	transform:scale(1.1);
-	transition:1s;
-}
-.like-view
-{
-	display:block;
-	opacity:0;
-	position:absolute;
-	margin-left:0;
-	width:70px;
-  margin-bottom:20%;
-  transform: translateY(-100%);
-}
-.like-view .fa
-{
-	cursor:pointer;
-	background-color:teal;
-	color:#fff;
-	height:25px;
-	width:25px;
-	font-size:15px;
-	padding:5px;
-	margin-top:3%;
-	margin-bottom:7%;
-	
-}
-.like-view .btn-secondary
-{
-	background:none!important;
-	border:none!important;
-	box-shadow:none!important;
-}
-.image-top:hover .like-view
-{
-	opacity:1;
-	margin-left:5%;
-	transition:1s;
-}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bodyimagestyle.css">
+<style>
 
 </style>
 <body>
@@ -147,24 +63,183 @@ body {
             <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
             <a href="Login.html"><i class="fa fa-fw fa-user"></i> Login</a>
         </div>
-         <div class="caurosul">
-             <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+         
+        <div class="slider">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner img-st">
+               <div class="carousel-item active">
+                 <img class="d-block w-100" src="image/w4.jpg" alt="First slide" style="width: 100%;">
+               </div>
+               <div class="carousel-item">
+                 <img class="d-block w-100" src="image/w1.jpg" alt="Second slide"style="width: 100%;" >
+               </div>
+               <div class="carousel-item">
+                 <img class="d-block w-100" src="image/w2.jpg" alt="Third slide" style="width: 100%;">
+               </div>
+               <div class="carousel-item">
+                 <img class="d-block w-100" src="image/w5.jpg" alt="Third slide" style="width: 100%;">
+               </div>
+               <div class="carousel-item">
+                 <img class="d-block w-100" src="image/w6.jpg" alt="Third slide" style="width: 100%;">
+               </div>
+               <div class="carousel-item">
+                 <img class="d-block w-100" src="image/w3.jpg" alt="Third slide" style="width: 100%;">
+               </div>
              </div>
-             <div class="slider">
-                <div class="w3-content w3-section">
-                  <img class="mySlides w3-animate-fading img-st" src="image/w1.jpg" style="width:100%">
-                  <img class="mySlides w3-animate-fading img-st" src="image/w2.jpg" style="width:100%">
-                  <img class="mySlides w3-animate-fading img-st" src="image/w3.jpg" style="width:100%">
-                  <img class="mySlides w3-animate-fading img-st" src="image/w4.jpg" style="width:100%">
-                  <img class="mySlides w3-animate-fading img-st" src="image/w1.jpg" style="width:100%">
-                </div>
-             </div>
-           </div>
+          </div>
+         </div>
 </div>  
 <!------Photo Grid Tittle-->    
 <div class="w3-main" style="margin-left:250px;">
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button> 
-
+  <div class="content">
+    <h2>Amazine picture</h2>
+      <div class="baguetteBoxOne gallery">
+         <a class="image-top" href="image/image7.jpg" data-caption="Goldern Bangla">
+           <img class="img" src="image/image7.jpg" alt="">
+           <div class="like-view">
+            <button type="button" class="btn btn-secondary" title="view">
+               <i class="fa fa-eye"></i>
+             </button>
+             <button type="button" class="btn btn-secondary" title="Like">
+               <i class="fa fa-heart-o"></i>
+              </button>
+              <button type="button" class="btn btn-secondary" title="Download">
+                <i class="fa fa-arrow-down"></i>
+               </button>
+          </div>
+         </a>
+        
+       
+        <a class="image-top" href="image/image7.jpg" data-caption="Goldern Bangla">
+          <img src="image/image7.jpg" alt="">
+          <div class="like-view">
+           <button type="button" class="btn btn-secondary" title="view">
+              <i class="fa fa-eye"></i>
+            </button>
+            <button type="button" class="btn btn-secondary" title="Like">
+              <i class="fa fa-heart-o"></i>
+             </button>
+             <button type="button" class="btn btn-secondary" title="Download">
+              <i class="fa fa-arrow-down"></i>
+             </button>
+         </div>
+        </a>
+       
+        <a class="image-top" href="image/image7.jpg" data-caption="Goldern Bangla">
+          <img src="image/image7.jpg" alt="">
+          <div class="like-view">
+           <button type="button" class="btn btn-secondary" title="view">
+              <i class="fa fa-eye"></i>
+            </button>
+            <button type="button" class="btn btn-secondary" title="Like">
+              <i class="fa fa-heart-o"></i>
+             </button>
+             <button type="button" class="btn btn-secondary" title="Download">
+              <i class="fa fa-arrow-down"></i>
+             </button>
+         </div>
+        </a>
+        <a class="image-top" href="image/image7.jpg" data-caption="Goldern Bangla">
+          <img src="image/image7.jpg" alt="">
+          <div class="like-view">
+           <button type="button" class="btn btn-secondary" title="view">
+              <i class="fa fa-eye"></i>
+            </button>
+            <button type="button" class="btn btn-secondary" title="Like">
+              <i class="fa fa-heart-o"></i>
+             </button>
+             <button type="button" class="btn btn-secondary" title="Download">
+              <i class="fa fa-arrow-down"></i>
+             </button>
+         </div>
+        </a>
+        <a class="image-top" href="image/image7.jpg" data-caption="Goldern Bangla">
+          <img src="image/image7.jpg" alt="">
+          <div class="like-view">
+           <button type="button" class="btn btn-secondary" title="view">
+              <i class="fa fa-eye"></i>
+            </button>
+            <button type="button" class="btn btn-secondary" title="Like">
+              <i class="fa fa-heart-o"></i>
+             </button>
+             <button type="button" class="btn btn-secondary" title="Download">
+              <i class="fa fa-arrow-down"></i>
+             </button>
+         </div>
+        </a>
+        <a class="image-top" href="image/image7.jpg" data-caption="Goldern Bangla">
+          <img src="image/image7.jpg" alt="">
+          <div class="like-view">
+           <button type="button" class="btn btn-secondary" title="view">
+              <i class="fa fa-eye"></i>
+            </button>
+            <button type="button" class="btn btn-secondary" title="Like">
+              <i class="fa fa-heart-o"></i>
+             </button>
+             <button type="button" class="btn btn-secondary" title="Download">
+              <i class="fa fa-arrow-down"></i>
+             </button>
+         </div>
+        </a>
+        <a class="image-top" href="image/image7.jpg" data-caption="Goldern Bangla">
+          <img src="image/image7.jpg" alt="">
+          <div class="like-view">
+           <button type="button" class="btn btn-secondary" title="view">
+              <i class="fa fa-eye"></i>
+            </button>
+            <button type="button" class="btn btn-secondary" title="Like">
+              <i class="fa fa-heart-o"></i>
+             </button>
+             <button type="button" class="btn btn-secondary" title="Download">
+              <i class="fa fa-arrow-down"></i>
+             </button>
+         </div>
+        </a>
+        <a class="image-top" href="image/image7.jpg" data-caption="Goldern Bangla">
+          <img src="image/image7.jpg" alt="">
+          <div class="like-view">
+           <button type="button" class="btn btn-secondary" title="view">
+              <i class="fa fa-eye"></i>
+            </button>
+            <button type="button" class="btn btn-secondary" title="Like">
+              <i class="fa fa-heart-o"></i>
+             </button>
+             <button type="button" class="btn btn-secondary" title="Download">
+              <i class="fa fa-arrow-down"></i>
+             </button>
+         </div>
+        </a>
+        <a class="image-top" href="image/image7.jpg" data-caption="Goldern Bangla">
+          <img src="image/image7.jpg" alt="">
+          <div class="like-view">
+           <button type="button" class="btn btn-secondary" title="view">
+              <i class="fa fa-eye"></i>
+            </button>
+            <button type="button" class="btn btn-secondary" title="Like">
+              <i class="fa fa-heart-o"></i>
+             </button>
+             <button type="button" class="btn btn-secondary" title="Download">
+              <i class="fa fa-arrow-down"></i>
+             </button>
+         </div>
+        </a>
+        <a class="image-top" href="image/image7.jpg" data-caption="Goldern Bangla">
+          <img src="image/image7.jpg" alt="">
+          <div class="like-view">
+           <button type="button" class="btn btn-secondary" title="view">
+              <i class="fa fa-eye"></i>
+            </button>
+            <button type="button" class="btn btn-secondary" title="Like">
+              <i class="fa fa-heart-o"></i>
+             </button>
+             <button type="button" class="btn btn-secondary" title="Download">
+              <i class="fa fa-arrow-down"></i>
+             </button>
+         </div>
+        </a>
+      </div>
+  </div>
 
 
 
@@ -226,6 +301,38 @@ body {
       </div>
    </section>
   </div> 
+
+
+
+
+
+  <script>
+    window.onload = function() {
+        baguetteBox.run('.baguetteBoxOne');
+        baguetteBox.run('.baguetteBoxTwo');
+        baguetteBox.run('.baguetteBoxThree', {
+            animation: 'fadeIn',
+            noScrollbars: true
+        });
+        baguetteBox.run('.baguetteBoxFour', {
+            buttons: false
+        });
+        baguetteBox.run('.baguetteBoxFive', {
+            captions: function(element) {
+                return element.getElementsByTagName('img')[0].alt;
+            }
+        });
+    
+        if (typeof oldIE === 'undefined' && Object.keys) {
+            hljs.initHighlighting();
+        }
+    
+        var year = document.getElementById('year');
+        year.innerText = new Date().getFullYear();
+    };
+    </script>
+  <script src="js/bodyimage (1).js"></script>
+  <script src="js/bodyimage (2).js"></script>
   <script src="./js/main.js"></script>  
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

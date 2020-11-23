@@ -32,7 +32,7 @@ body{
 	font-size: 18px;
 	border: none;
 	outline: none;
-	background-color:teal;
+	background-color:red;
 	color: white;
 	cursor: pointer;
 	padding: 15px;
@@ -40,8 +40,101 @@ body{
   }
   
   #myBtn:hover {
-	background-color: #555;
+	background-color: teal;
   }
+  /* ------------------------------ */
+
+  .w3-bar-block .w3-bar-item {
+	padding: 16px;
+	font-weight: bold;
+  }
+  body {
+	font-family: Arial;
+	margin: 0;
+  }
+  .container1 .mySlides img
+  {
+	  height: 550px;
+  }
+  /* Style the search box */
+  #mySearch {
+	width: 100%;
+	font-size: 15px;
+	padding: 11px;
+	border: 1px solid #ddd;
+  }
+  
+  /* Style the navigation menu inside the left column */
+  #myMenu {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  #myMenu li a {
+	padding: 12px;
+	text-decoration: none;
+	color: black;
+	display: block
+  }
+  
+  #myMenu li a:hover {
+	background-color: teal;
+	color: white;
+  }
+  .img-st{
+	width: 100%;
+	height: 400px;
+  }
+  .image-top img
+  {
+	  width:100%;
+  }
+  .image-top img:hover
+  {
+	  transform:scale(1.1);
+	  transition:1s;
+  }
+  .like-view
+  {
+	  display:block;
+	  opacity:0;
+	  position:absolute;
+	  margin-left:0;
+	  width:70px;
+	margin-bottom:20%;
+	transform: translateY(-100%);
+  }
+  .like-view .fa
+  {
+	  cursor:pointer;
+	  background-color: red;
+	  color:#fff;
+	  height:25px;
+	  width:25px;
+	  font-size:15px;
+	  padding:5px;
+	  margin-top:3%;
+	  margin-bottom:7%;
+	  
+  }
+  .like-view .btn-secondary
+  {
+	  background:none!important;
+	  border:none!important;
+	  box-shadow:none!important;
+  }
+  .image-top:hover .like-view
+  {
+	  opacity:1;
+	  margin-left:5%;
+	  transition:1s;
+  }
+  .img-st{
+	max-width: 100%;
+	height: 480px;
+  }
+
 /*------------------------footer--------------------*/
 .footer
 {
@@ -121,24 +214,6 @@ body{
 	height:200px;
 	width: 400px;
 }
-/* .to-top
-{
-	background: white;
-	position: fixed;
-	bottom: 16px;
-	right: 32px;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 32px;
-	color: black;
-	text-decoration-style: none;
-	pointer-events: none;
-	transition: all .4s;
-} */
 /* ---------top navbar------- */
 .navber {
 	width: 100%;
@@ -168,6 +243,12 @@ body{
 	  }
   }
   /* ------End top navbar--------- */
+  /* ------------image slider---------- */
+  .img-st{
+	max-width: 100%;
+	height: 480px;
+  }
+
   /* -----------contact from------------ */
   input[type=text], select, textarea {
 	width: 100%;
@@ -202,3 +283,70 @@ body{
 	padding: 20px;
   }
   /* end contact from */ 
+  /*---------- bugettbox-------------- */
+  .content {
+    max-width: 1160px;
+	margin: 0 auto;
+	margin-left: 8px;
+}
+
+.gallery:after {
+    content: '';
+    display: block;
+    height: 2px;
+    margin: .5em 0 1.4em;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(77,77,77,1) 50%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(77,77,77,1) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.gallery img {
+    height: 100%;
+}
+
+.gallery a {
+    width: 340px;
+    height: 250px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 4px 6px;
+    box-shadow: 0 0 4px -1px #000;
+}
+
+.ribbon > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+}
+
+@media (max-width: 700px) {
+    .sm-hidden {
+        display: none;
+	}
+	.content{
+		transform: translateX(50px);
+		margin-top: -30%;
+	}
+}
+@media (max-width: 580px) {
+    .sm-hidden {
+        display: none;
+	}
+	.content{
+		transform: translateX(40px);
+		margin-top: -15%;
+	}
+	
+}
+@media (max-width: 408px) {
+    .sm-hidden {
+        display: none;
+	}
+	.content{
+		transform: translateX(30px);
+		margin-top: -50%;
+	}
+	.img{
+		width: 250px;
+	}
+}
