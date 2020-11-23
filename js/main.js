@@ -10,7 +10,6 @@ function w3_open() {
   }
   
   
-  
   // Accordions
   function myAccordion(id) {
     var x = document.getElementById(id);
@@ -38,20 +37,6 @@ function w3_open() {
       }
     }
   }
-  // var myIndex = 0;
-  // carousel();
-  
-  // function carousel() {
-  //   var i;
-  //   var x = document.getElementsByClassName("mySlides");
-  //   for (i = 0; i < x.length; i++) {
-  //     x[i].style.display = "none";  
-  //   }
-  //   myIndex++;
-  //   if (myIndex > x.length) {myIndex = 1}    
-  //   x[myIndex-1].style.display = "block";  
-  //   setTimeout(carousel, 9000);    
-  // }
   
   //Get the button
   var mybutton = document.getElementById("scrollBtn");
@@ -93,18 +78,3 @@ function w3_open() {
    toTop.classList.remove("active");
  }
   });
-  //Scroll Revel animation
-  const sr = ScrollReveal({
-    origin: 'top',
-    Distance: '80px',
-    duration: 2000,
-    reset: true
-  });
-  sr.reveal('.w3-sidebar',{});
-  sr.reveal('.image-top',{});
-  sr.reveal('.w3-main',{});
-  sr.reveal('.w3-container',{});
-  sr.reveal('.w3-button',{dealy:200});
-  sr.reveal('.Home_title',{dealy:400});
-  sr.reveal('.Home_title',{interval:200});
-  
