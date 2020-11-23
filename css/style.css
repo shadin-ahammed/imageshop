@@ -231,19 +231,28 @@ body{
 	}
 	.content{
 		transform: translateX(50px);
-		margin-top: -15%;
-		width: 500px;
+		margin-top: -30%;
 	}
-@media (max-width: 550px) 
-{
+}
+@media (max-width: 580px) {
     .sm-hidden {
         display: none;
 	}
 	.content{
 		transform: translateX(40px);
-		margin-top: -20%;
+		margin-top: -15%;
 	}
-	#myBtn{
-		margin-right: 40px;
-	}	
+	
+}
+@media (max-width: 408px) {
+    .sm-hidden {
+        display: none;
+	}
+	.content{
+		transform: translateX(30px);
+		margin-top: -50%;
+	}
+	.img{
+		width: 250px;
+	}
 }
