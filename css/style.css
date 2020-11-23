@@ -150,6 +150,12 @@ body{
 	  }
   }
   /* ------End top navbar--------- */
+  /* ------------image slider---------- */
+  .img-st{
+	max-width: 100%;
+	height: 480px;
+  }
+
   /* -----------contact from------------ */
   input[type=text], select, textarea {
 	width: 100%;
@@ -204,11 +210,11 @@ body{
 }
 
 .gallery a {
-    width: 240px;
-    height: 180px;
+    width: 340px;
+    height: 250px;
     display: inline-block;
     overflow: hidden;
-    margin: 8px 10px;
+    margin: 6px 8px;
     box-shadow: 0 0 4px -1px #000;
 }
 
@@ -219,8 +225,25 @@ body{
     border: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .sm-hidden {
         display: none;
-    }
+	}
+	.content{
+		transform: translateX(50px);
+		margin-top: -15%;
+		width: 500px;
+	}
+@media (max-width: 550px) 
+{
+    .sm-hidden {
+        display: none;
+	}
+	.content{
+		transform: translateX(40px);
+		margin-top: -20%;
+	}
+	#myBtn{
+		margin-right: 40px;
+	}	
 }
