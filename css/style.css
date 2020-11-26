@@ -260,6 +260,11 @@ body{
 		
 	  }
   }
+  @media screen and (max-width:1250px){
+	  .content{
+		  columns: 4;
+	  }
+  }
   /* ------End top navbar--------- */
   /* -----------contact from------------ */
   input[type=text], select, textarea {
