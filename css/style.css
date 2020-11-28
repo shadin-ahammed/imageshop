@@ -3,6 +3,17 @@
 	margin: 0;
 	padding: 0;
 }
+html{
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: gray;
+}
+@media (max-width:950px){
+	html{
+	margin-left: 0;
+	margin-right: 0;
+	}
+}
 body{
 	scroll-behavior: smooth;
 }
@@ -258,11 +269,6 @@ body{
 		float:none;
 		display: block;
 		
-	  }
-  }
-  @media screen and (max-width:1250px){
-	  .content{
-		  columns: 4;
 	  }
   }
   /* ------End top navbar--------- */
