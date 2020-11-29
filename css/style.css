@@ -4,18 +4,29 @@
 	padding: 0;
 }
 html{
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 6%;
+	margin-right: 6%;
 	background-color: gray;
 }
-@media (max-width:950px){
+@media(max-width:950px){
 	html{
-	margin-left: 0;
-	margin-right: 0;
+		margin-left: 0;
+		margin-right: 0;
 	}
+}
+@media (min-width:460px){
+	html{
+		margin-left: 0 auto;
+		margin-right: 0 auto;
+	}
+}
+html{
+	background-image: url(/image/pathor.jpg);
+	background-attachment: fixed;
 }
 body{
 	scroll-behavior: smooth;
+	
 }
 .logo{
 	height: 50px;
@@ -46,7 +57,7 @@ body{
 	display: none;
 	position: fixed;
 	bottom: 20px;
-	right: 30px;
+	right: 80px;
 	z-index: 99;
 	font-size: 18px;
 	border: none;
@@ -61,15 +72,16 @@ body{
   #myBtn:hover {
 	background-color: teal;
   }
+
+  /* ----------------------------- */
+  .menu{
+	  margin-top: 8px !important;
+  }
   /* ------------------------------ */
 
   .w3-bar-block .w3-bar-item {
 	padding: 16px;
 	font-weight: bold;
-  }
-  body {
-	font-family: Arial;
-	margin: 0;
   }
   .container1 .mySlides img
   {
@@ -101,11 +113,6 @@ body{
 	background-color: teal;
 	color: white;
   }
-  .img-st{
-	width: 100%;
-	height: 400px;
-	margin-top: 2px;
-  }
   .image-top img
   {
 	  width:100%;
@@ -128,8 +135,8 @@ body{
 	  position:absolute;
 	  margin-left:0;
 	  width:70px;
-	margin-bottom:20%;
-	transform: translateY(-100%);
+	  margin-bottom:20%;
+	  transform: translateY(-100%);
   }
   .like-view .fa
   {
@@ -156,9 +163,9 @@ body{
 	  margin-left:5%;
 	  transition:1s;
   }
-  .img-st{
-	max-width: 100%;
-	height: 480px;
+  .slider .img-st img{
+	height: 450px;
+	width: 100%;
   }
 
 /*------------------------footer--------------------*/
@@ -240,37 +247,43 @@ body{
 	height:200px;
 	width: 400px;
 }
-.image-topen img{
-	height: 200px;
-	width: 400px;
-}
 /* ---------top navbar------- */
-.navber {
+.nav-top{
 	width: 100%;
-	overflow: hidden;
-  }
-  
-.navber a {
-	float:right;
-	padding: 20px;
-	color: white;
-	text-decoration: none;
-	font-size: 17px;
-  }
-.navber a:hover {
+	display: inline-flex;
+	padding: 12px;
+	margin-bottom: 0;
+	background-color: rgb(247, 250, 250);
+	position: sticky;
+	
+}
+.nav-top li{
+	list-style-type: none;
+	padding: 10px 15px;
 	color: #000;
+	font-size: 18px;
+	font-weight: bold;
+	
+}
+.nav-top li a{
 	text-decoration: none;
-  }
-@media screen and (max-width: 700px) {
-	.navber a {
-	  display: block;
-	}
-	.navber a{
-		float:none;
-		display: block;
+}
+.nav-top li a:hover{
+	color: red;
+}
+@media(max-width:700px){
+	.nav-top{
+		font-size: auto;
+		display: inline-block;
+		margin-top: 0;
 		
-	  }
-  }
+	}
+	.nav-top li{
+		padding: 2px 1px;
+	}
+}
+
+
   /* ------End top navbar--------- */
   /* -----------contact from------------ */
   input[type=text], select, textarea {
