@@ -274,12 +274,33 @@ body{
 @media(max-width:700px){
 	.nav-top{
 		font-size: auto;
+		display: inline-flex;
+		margin-top: 0;
+		
+	}
+	.nav-top li{
+		margin-left: 0;
+	}
+	.nav-top li a{
+		padding: 1px;
+		margin-top: 8px;
+		
+	}
+}
+@media(max-width:482px){
+	.nav-top{
+		font-size: auto;
 		display: inline-block;
 		margin-top: 0;
 		
 	}
 	.nav-top li{
-		padding: 2px 1px;
+		margin-left: 0;
+	}
+	.nav-top li a{
+		padding: 1px;
+		margin-top: 8px;
+		
 	}
 }
 
