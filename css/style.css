@@ -395,16 +395,23 @@ body{
 } */
 
 /* -------clock in slider--------- */
+.clock {
+	border-radius: 10px;
+	color: #fff;
+	font-family: 'Orbitron', sans-serif;
+  }
 .format{
 	color: aquamarine;
-	font-size: 20px;
+	font-size: 30px;
 	margin: 20px 0;
+	font-family: 'Orbitron', sans-serif;
+	font-weight: bold;
   }
   .format button{
 	display: inline-block;
 	border: none;
 	outline: none;
-	font-size: 18px;
+	font-size: 15px;
 	padding: 8px 15px;
 	font-family: 'Orbitron';
 	border-radius: 4px;
