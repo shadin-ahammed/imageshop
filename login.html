@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/login.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
@@ -76,7 +76,7 @@
         <div class="title signup">
         Signup Form</div>
     </div>
-    <div class="form-container">
+    <div class="form-container container">
       <div class="slide-controls">
         <input type="radio" name="slide" id="login" checked>
         <input type="radio" name="slide" id="signup">
@@ -85,43 +85,52 @@
         <div class="slider-tab">
         </div>
      </div>
-     <div class="form-inner">
+     <div id="form" class="form-inner from">
         <form action="#" class="login">
           <div class="field">
             <input type="text" placeholder="Email Address" required>
           </div>
           <div class="field">
             <input type="password" placeholder="Password" required>
-           </div>
+          </div>
            <div class="pass-link">
            <a href="#">Forgot password?</a></div>
-           <div class="field btn">
-           <div class="btn-layer">
-           </div>
-           <input type="submit" value="Login">
-           </div>
+           <input class="btn1" type="submit" value="Login">
            <div class="signup-link">
            Not a member? <a href="">Signup now</a></div>
         </form>
-        <form action="#" class="signup">
-            <div class="field">
-               <input type="text" placeholder="Full Name" required>
-            </div>
-            <div class="field">
-               <input type="text" placeholder="Email Address" required>
-            </div>
-            <div class="field">
-                <input type="password" placeholder="Password" required>
-            </div>
-            <div class="field">
-               <input type="password" placeholder="Confirm password" required>
-            </div>
-            <div class="field btn">
-            <div class="btn-layer">
-           </div>
-              <input type="submit" value="Signup">
-           </div>
-         </form>
+       <form action="#" class="signup">
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" placeholder="Your Name" id="username" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="username">Email</label>
+            <input type="email" placeholder="......@gmail.com" id="email"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="username">Password</label>
+            <input type="password" placeholder="Password" id="password"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="username">Confirm Password</label>
+            <input type="password" placeholder="Confirm Password" id="password2"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+        <input class="btn1" type="submit" value="Signup">
+      </form>  
+      </div>
        </div>
      </div>
     </div>
@@ -174,6 +183,7 @@
    </section>
   </div> 
   <script src="./js/main.js"></script> 
+  <script src="./js/Contact.js"></script>
   <script src="./js/login.js"></script> 
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
