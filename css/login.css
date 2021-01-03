@@ -126,7 +126,7 @@ form .field input:focus::placeholder{
   color: #b3b3b3;
 }
 .form-inner form .pass-link{
-  margin-top: 5px;
+  margin-top: 5px !important;
 }
 .form-inner form .signup-link{
   text-align: center;
@@ -142,16 +142,16 @@ form .field input:focus::placeholder{
   text-decoration: underline;
 }
 form .btn{
-  height: 50px;
-  width: 100%;
-  border-radius: 5px;
+  height: 50px !important;
+  width: 100% !important;
+  border-radius: 5px !important;
   position: relative;
   overflow: hidden;
 }
 form .btn .btn-layer{
-  height: 120%;
-  width: 310%;
-  position: absolute;
+  height: 120% !important;
+  width: 310% !important;
+  position: absolute !important;
   left: -100%;
   background: teal;
   border-radius: 5px;
@@ -184,59 +184,59 @@ form .btn input[type="submit"]{
 	padding: 30px 40px;	
 }
 
-.form-control {
-	margin-bottom: 5px;
-	padding-bottom: 20px;
+.form-control1 {
+	margin-bottom: 5px !important;
+	padding-bottom: 20px !important;
 	position: relative;
 }
 
-.form-control label {
+.form-control1 label {
 	display: inline-block;
 	margin-bottom: 5px;
-	text-align: start;
+	text-align: start !important;
 }
 
-.form-control input {
+.form-control1 input {
 	border: 2px solid gainsboro;
 	border-radius: 4px;
 	display: block;
 	font-family: inherit;
 	font-size: 14px;
-	padding: 10px;
+	padding: 10px !important;
 	width: 100%;
 }
 
-.form-control input:focus {
+.form-control1 input:focus {
 	outline: 0;
 	border-color: #777;
 }
 
-.form-control.success input {
+.form-control1.success input {
 	border-color: teal;
 }
 
-.form-control.error input {
+.form-control1.error input {
 	border-color: #e74c3c;
 }
 
-.form-control i {
+.form-control1 i {
 	visibility: hidden;
 	position: absolute;
 	top: 40px;
 	right: 10px;
 }
 
-.form-control.success i.fa-check-circle {
+.form-control1.success i.fa-check-circle {
 	color: #2ecc71;
 	visibility: visible;
 }
 
-.form-control.error i.fa-exclamation-circle {
+.form-control1.error i.fa-exclamation-circle {
 	color: #e74c3c;
 	visibility: visible;
 }
 
-.form-control small {
+.form-control1 small {
 	color: #e74c3c;
 	position: absolute;
 	bottom: 0;
@@ -244,7 +244,7 @@ form .btn input[type="submit"]{
 	visibility: hidden;
 }
 
-.form-control.error small {
+.form-control1.error small {
 	visibility: visible;
 }
 
@@ -256,7 +256,7 @@ form .btn input[type="submit"]{
 	display: block;
 	font-family: inherit;
 	font-size: 16px;
-	padding: 10px;
+	padding: 10px !important;
 	margin-top: 20px;
 	width: 100%;
 }
@@ -268,11 +268,14 @@ form .btn input[type="submit"]{
 	display: block;
 	font-family: inherit;
 	font-size: 16px;
-	padding: 10px;
+	padding: 10px !important;
 	margin-top: 20px;
 	width: 100%;
 }
-
+.input{
+  border: 0px solid gainsboro;
+  border-bottom-width: 4px;
+}
 
 
 @media screen and (max-width: 480px) {
