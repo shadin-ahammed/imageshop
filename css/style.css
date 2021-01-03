@@ -29,7 +29,7 @@ html{
 	margin-right: 6%;
 	background-color: gray;
 }
-@media(max-width:950px){
+@media(max-width:1250px){
 	html{
 		margin-left: 0;
 		margin-right: 0;
@@ -117,12 +117,13 @@ body{
   }
 .side-nav ul{
     display: flex;
-    position: relative;
+	position: relative;
 }
 .side-nav ul li{
     position: relative;
     list-style-type: none;
-    transform: translateX(-43px);
+	transform: translateX(-43px);
+	
 }
 .side-nav ul li a{
     text-decoration: none;
@@ -188,6 +189,7 @@ body{
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
+
   }
   
   #myMenu li a {
@@ -438,4 +440,9 @@ body{
   .format button:hover{
 	  background-color: red;
 	  color: white;
+  }
+  @media(max-width:750px){
+	  .carousel-caption{
+		  display: none;
+	  }
   }
