@@ -57,15 +57,21 @@
            </ul>
 </nav>
 <!---------close side menu---->
-<!----------start slider section-->
-<div class="w3-main" style="margin-left:300px;">
-  <div class="nav-top">
-    <li><a><i class="fa fa-bars w3-button w3-hide-large w3-xlarge menu" onclick="w3_open()"></i></a></li>
+<!----------start top nav section-->
+<div class="w3-main nav sticky-top" style="margin-left:300px;">
+  <div class="nav-top" id="nav-top">
+   <a><i class="fa fa-bars w3-button w3-hide-large w3-xlarge nav-link" onclick="w3_open()"></i></a>
+    <div class=" nav-top justify-content-end">
     <li><a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a></li> 
     <li><a href="#"><i class="fa fa-fw fa-search"></i> Search</a> </li>
     <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> </li>
     <li><a href="Login.html"><i class="fa fa-fw fa-user"></i> Login</a></li>
-  </div>
+   </div>
+ </div>
+</div>
+<!-- End navsection -->
+<!----------start slider section-->
+<div class="w3-main" style="margin-left:300px;">
         <div class="slider">
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner img-st">
@@ -88,14 +94,7 @@
                  <img class="d-block w-100" src="image/w3.jpg" alt="Third slide" style="width: 100%;">
                </div>
                <div class="carousel-caption">
-                <div class="clock" data-format='12'>
-                  <h1>00 : 00 : 00 AM</h1>
-                </div>
-                <div class="format">
-                  <h1>Format</h1>
-                  <button data-format='12'>12hours</button>
-                  <button data-format='24'>24hours</button>
-                </div>
+               <!-- Nothing caption of the area -->
               </div>
              </div>
           </div>
