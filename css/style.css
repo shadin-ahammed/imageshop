@@ -114,6 +114,9 @@ body{
 		
 	}
 }
+.w3-main{
+	margin-left: 280px !important;
+}
 /* -----------Side menu ber------------------ */
 .logo{
 	height: 36px;
@@ -189,9 +192,10 @@ body{
 	padding: 16px;
 	font-weight: bold;
   }
-  .container1 .mySlides img
+  /* -----------image slayder---------- */
+  .img-st img
   {
-	  height: 550px;
+	  height:450px!important;
   }
   /*--------- Style the search box----------- */
   #mySearch {
