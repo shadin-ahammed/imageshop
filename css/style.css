@@ -45,12 +45,8 @@ p{
 		margin-right: 0 auto;
 	}
 }
-html{
-	background-image: url(/image/pathor.jpg);
-	background-attachment: fixed;
-}
 body{
-	scroll-behavior: smooth;
+	scroll-behavior: smooth !important;
 	
 }
 /* ---------top navbar------- */
@@ -100,18 +96,16 @@ body{
 }
 @media(max-width:482px){
 	.nav-top{
-		font-size: auto;
-		display: inline-block;
-		margin-top: 0;
-		
+		margin-top: 0 !important;
+		z-index: 1;	
 	}
 	.nav-top li{
 		margin-left: 0;
 	}
 	.nav-top li a{
-		padding: 1px;
-		margin-top: 8px;
-		
+		padding: 0px 0px 0px 0px;
+		margin-top: 0px;
+		font-size:10px;
 	}
 }
 .w3-main{
